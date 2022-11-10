@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/0d7b2d1ebb.js" crossorigin="anonymous"></script>
+    <title>Profile Card </title>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-car">
+            <div class="cover-pic">
+                <h3>Mentor profile</h3>
+            </div>
+            <img src="images/profile.png" class="profile-card">
+            <h1>Abdullah chandio<span><img  class="v-icon" src="images/icon-.png" width="50"></span></h1>
+            <p>Frontend - Web Developer</p>
+            <div class="row">
+                <div>
+                    <a href="https://www.facebook.com/abdullahkchandio"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/uibyabdullah"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/abdullahkhanchandio/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div>
+                    <a href="https://github.com/abdullahchandio"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <!-- <div>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div> -->
+            </div>
+            <div class="sec-nav">
+                <ul>
+                    <li><a href="#" id="my-btn">About me</a></li>
+                    <li><a href="#" download>Download CV</a></li>
+                </ul>
+            </div>
+            <p id="About">I'm a Junior Web Developer & UX / UI Web Designer with a Strong sense of
+             aesthetics and interaction.</p>
+        </div>
+     
+    </div>
+</body>
+    <script>
+        const btn = document.querySelector("#my-btn")
+        const About = document.querySelector("#About")
+
+        btn.addEventListener("click", function(){
+            if(About.style.display === "block"){
+                About.style.display = "none"
+            } else{
+                About.style.display = "block"
+            }
+        });
+    </script>
+</html>
