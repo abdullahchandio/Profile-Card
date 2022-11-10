@@ -92,7 +92,8 @@ a i{
     justify-content: space-around;
     align-items: center;
     margin:10px auto;
-    width: 300px;
+    max-width: 300px;
+    width:100%;
     background-color: #00306e;
     border-radius: 40px;
     padding: 10px 0;
